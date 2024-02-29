@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    background-color: #DCDCDC;
+    display: flex;
+    max-width: calc(100vw - 10px);
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    min-width: 10em;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: flex-start;
+    /* border: dashed #1c1c1c; */
+}
+
+.greetings {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: dashed #1c1c1c; */
+}
+
+.greetings .text {
+    flex: 1;
+    margin-right: 10rem;
+    margin-left: -3.6rem;
+    /* border: dashed #1c1c1c; */
+}
+
+.greetings h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    /* border: dashed #1c1c1c; */
+}
+
+.greetings p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.greetings img {
+    max-width: 100%;
+    border-radius: 25px;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-right: -7rem;
+    /* border: dashed #979494; */
+}
+
+.container a {
+    /* для кнопки */
+    margin-top: -7rem;
+    margin-left: -5rem;
+}
+
+#wrapBut {
+    font-family: "Poppins";
+    font-size: 1.3rem;
+    /* border: dashed; */
+    border: 0;
+    border-radius: 300px;
+    background-color: #000000;
+    color: #FAFAFA;
+    cursor: pointer;
+    text-wrap: nowrap;
+    height: 3rem;
+    width: 15rem;
+    font-size: 16px;
+}
+
+#wrapBut:hover {
+    background-color: #3b3b3b;
+}
