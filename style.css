@@ -5,19 +5,25 @@ body {
     background-color: #DCDCDC;
     display: flex;
     max-width: calc(100vw - 10px);
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
     font-family: 'Ubuntu';
     margin: 0;
     overflow-x: hidden;
     flex-direction: column;
+    /* border: dashed #000000; */
+}
+
+a {
+    text-decoration: none;
+    color: #000 !important;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
-    min-width: 0.1em;
+    min-width: fit-content;
     margin: 0 auto;
     padding: 20px;
     align-items: flex-start;
@@ -32,24 +38,23 @@ body {
 }
 
 .greetings .text {
+    /* border: dashed #1c1c1c; */
     display: flex;
     flex-direction: column;
     flex: 1;
     text-align: left;
-    margin-right: 10.1rem;
-    margin-left: 1.7rem;
-    /* border: dashed #1c1c1c; */
+    text-wrap: wrap;
 }
 
 .greetings h1 {
-    
     margin: 0;
+    margin-top: -2rem;
     font-size: 3rem;
     /* border: dashed #1c1c1c; */
 }
 
 .greetings p {
-    margin: 10px 0;
+    margin-top: 2rem;
     font-size: 1.3rem;
 }
 
@@ -65,7 +70,6 @@ body {
 .container a {
     /* для кнопки */
     margin-top: -7rem;
-    margin-left: -5rem;
 }
 
 #wrapBut {
@@ -87,10 +91,92 @@ body {
     background-color: #3b3b3b;
 }
 
-.list-section {
-    max-width: calc(100vw - 10px);
+.under-greet {
+    /* border: dashed #000000; */
     display: flex;
-    border: dashed #000000;
-    margin-top: 40rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20rem;
+    min-width: fit-content;
+}
+
+.under-greet h1 {
+    /* border: dashed #000000; */
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.list-section {
+    /* border: dashed #000000; */
+
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 0;
+    margin-right: 0;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.frame {
+    border: solid #3b3b3b 2px;
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    min-width: 20rem;
+    padding: 1rem;
+    padding-bottom: 3.3rem;
+}
+
+.main-text h1 {
+    margin-left: center;
+    font-size: 1rem;
+    min-height: 1.8rem;
+}
+
+.sub-text {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-left: -1rem;
+}
+
+.sub-text li {
+    padding-bottom: 1.7rem;
+    max-height: 2rem;
+}
+
+.frame button {
+    font-family: "Ubuntu";
+    font-size: 1.3rem;
+    /* border: dashed; */
+    border: 0;
+    border-radius: 300px;
+    background-color: #3b3b3b;
+    color: #f5f5f5;
+    cursor: pointer;
+    text-wrap: nowrap;
+    height: 3rem;
+    width: 15rem;
+    font-size: 16px;
+}
+
+.frame button:hover {
+    background: #2c2c2c;
+}
+
+#python {
+    border: outset #36b02e 5px;
+}
+
+#front {
+    border: outset #e09b10 5px;
+}
+
+#fullstack {
+    border: outset #2a84bd 5px;
+}
+
+#Fs-li {
+    text-wrap: nowrap;
 }
