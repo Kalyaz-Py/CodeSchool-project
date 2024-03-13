@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <div class="greetings">
-            <div class="text">
+            <div class="greetings-text">
                 <h1>Школа программирования</h1>
                 <p>Обучение новым технологиям и инновациям!<br>
                     В курсах вы найдёте веб-разработку, уроки дизайна<br>
@@ -21,7 +21,7 @@
             </div>
             <img src="images/fullLogoCde.png" alt="logoCode">
         </div>
-        <a><button id="wrapBut">Learn more</button></a>
+        <a><button id="wrapBut">Подробнее</button></a>
     </div>
 
     <div class="under-greet" id="curses">
@@ -31,11 +31,11 @@
     <div class="list-section">
 
         <div class="frame" id="python">
-            <div class="main-text"></div>
-            <a href="">
-                <h1>Python -<br>
-                    разработчик</h1>
-            </a>
+            <div class="main-text">
+                <a href="" id="py-but">
+                    <h1>Python -<br>разработчик</h1>
+                </a>
+            </div>
             <div class="sub-text">
                 <ul>
                     <li>Основы Python.</li>
@@ -46,12 +46,12 @@
         </div>
 
         <div class="frame" id="front">
-            <div class="main-text"></div>
-            <a href="">
-                <h1>Frontend -<br>
-                    разработчик</h1>
-            </a>
-
+            <div class="main-text">
+                <a href="">
+                    <h1>Frontend -<br>
+                        разработчик</h1>
+                </a>
+            </div>
             <div class="sub-text">
                 <ul>
                     <li>Обучение HTML, TypeScript, CSS.</li>
@@ -62,15 +62,15 @@
         </div>
 
         <div class="frame" id="fullstack">
-            <div class="main-text"></div>
-            <a href="">
-                <h1>FullStack -<br>
-                    разработчик</h1>
-            </a>
-
+            <div class="main-text">
+                <a href="">
+                    <h1>FullStack -<br>
+                        разработчик</h1>
+                </a>
+            </div>
             <div class="sub-text">
                 <ul>
-                    <li id="Fs-li">Улучшение <b>Front</b> и <b>Back</b> навыков.</li>
+                    <li id="FS-li">Улучшение <b>Front</b> и <b>Back</b> навыков.</li>
                     <li>Работа с базами данных и MySql.</li>
                     <li>Обучение работы с Docker и различными фреймворками.</li>
                 </ul>
@@ -78,17 +78,82 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- |||||||||||||              КОСТЫЛИ ДЛЯ НОРМАЛЬНОГО ОТОБРАЖЕНИЯ             |||||||-->
 
-    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequatur tenetur porro eveniet voluptates
-        veritatis labore iusto, beatae, pariatur doloremque ipsam deleniti maxime laboriosam totam saepe dicta error
-        assumenda repudiandae.</h3>
-    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequatur tenetur porro eveniet voluptates
-        veritatis labore iusto, beatae, pariatur doloremque ipsam deleniti maxime laboriosam totam saepe dicta error
-        assumenda repudiandae.</h3>
-    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequatur tenetur porro eveniet voluptates
-        veritatis labore iusto, beatae, pariatur doloremque ipsam deleniti maxime laboriosam totam saepe dicta error
-        assumenda repudiandae.</h3>
+
+    <div class="more-py" id="py-slide">
+        <div class="content">
+            <h1>Python - разработчик</h1>
+            <!--        ПЕРВЫЙ СЛАЙД        -->
+            <div class="text-with-image" id="first-s">
+                <div class="text">
+                    <h2>Основы Python</h2>
+                    <div class="base-text">
+                        <p>
+                            В этом разделе курса ты изучишь базовые понятия языка программирования Python. Мы
+                            рассмотрим
+                            основные типы данных, операторы, условные выражения и циклы. Ты узнаешь, как создавать и
+                            использовать функции и модули в своих программах на Python. Кроме того, мы поговорим о
+                            структурах данных, таких как списки, словари и кортежи, и о том, как использовать их в
+                            своих
+                            проектах.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="py-image">
+                    <img src="images/py-1.png" alt="Основы Python">
+                </div>
+            </div>
+            <!--        ВТОРОЙ СЛАЙД        -->
+            <div class="text-with-image" id="second-slide">
+                <div class="text" id="text-2">
+
+                    <h2>Введение в машинное обучение и работа с нейросетями</h2>
+                    <div class="base-text">
+                        <p>
+                            В этой части курса мы погрузимся в мир машинного обучения. Ты узнаешь, что такое нейронные
+                            сети
+                            и как они работают. Мы рассмотрим различные алгоритмы машинного обучения, такие как линейная
+                            регрессия, классификация и кластеризация. Ты научишься использовать специализированные
+                            библиотеки
+                            Python, такие как TensorFlow и Keras, для создания и обучения нейронных сетей. В конце этого
+                            раздела ты сможешь применить свои знания машинного обучения для решения реальных задач.
+                        </p>
+                    </div>
+                </div>
+                <div class="py-image" id="py-image-2">
+                    <img src="images/py-2.png" alt="Введение в машинное обучение">
+                </div>
+            </div>
+            <!--        ТРЕТИЙ СЛАЙД        -->
+            <div class="text-with-image" id="third-slide">
+                <div class="text">
+
+                    <h2>Автоматизация процессов и анализ данных</h2>
+                    <div class="base-text">
+                        <p>
+                            В этом разделе курса мы рассмотрим, как использовать Python для автоматизации процессов и
+                            анализа
+                            данных. Мы рассмотрим библиотеки Python, такие как Pandas и NumPy, для работы с данными. Ты
+                            узнаешь,
+                            как считывать данные из различных источников, таких как CSV файлы и базы данных. Также мы
+                            изучим
+                            методы обработки данных, включая фильтрацию, сортировку и группировку. Кроме того, ты
+                            научишься
+                            создавать автоматизированные задачи с использованием Python, в том числе регулярные задания,
+                            обработку файлов и веб-скрапинг.
+                        </p>
+                    </div>
+                </div>
+                <div class="py-image" id="py-image-3">
+                    <img src="images/py-3.png" alt="Автоматизация процессов и анализ данных">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 
 </html>

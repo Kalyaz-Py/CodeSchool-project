@@ -41,7 +41,7 @@ a {
     /* border: dashed #613db4; */
 }
 
-.greetings .text {
+.greetings-text {
     /* border: dashed #1c1c1c; */
     display: flex;
     flex-direction: column;
@@ -68,17 +68,18 @@ a {
     margin-top: 5rem;
     margin-left: 3rem;
     margin-right: -7rem;
+    height: auto;
     /* border: dashed #979494; */
 }
 
 .container a {
     /* для кнопки */
     margin-top: -7rem;
+    margin-bottom: 10rem;
 }
 
 #wrapBut {
-    font-family: "Poppins";
-    font-size: 1.3rem;
+    font-family: "Ubuntu";
     /* border: dashed; */
     border: 0;
     border-radius: 300px;
@@ -88,7 +89,7 @@ a {
     text-wrap: nowrap;
     height: 3rem;
     width: 15rem;
-    font-size: 16px;
+    font-size: 1.17rem;
 }
 
 #wrapBut:hover {
@@ -106,7 +107,7 @@ a {
 }
 
 .under-greet h1 {
-    border: dashed #000000;
+    /* border: dashed #000000; */
     position: absolute;
     margin-bottom: 5rem;
     padding: 2rem;
@@ -118,12 +119,12 @@ a {
     /* border: dashed #000000; */
 
     display: flex;
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: -7rem;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -136,11 +137,13 @@ a {
     min-width: 20rem;
     padding: 1rem;
     padding-bottom: 3.3rem;
+    flex-basis: 100%;
+    margin: 1rem;
 }
 
 .main-text h1 {
     margin-left: center;
-    font-size: 1rem;
+    font-size: 2rem;
     min-height: 1.8rem;
 }
 
@@ -186,6 +189,94 @@ a {
     border: outset #2a84bd 5px;
 }
 
-#Fs-li {
-    text-wrap: nowrap;
+
+#FS-li {
+    text-wrap: nowrap
+        /* строка большая приходится так :(( */
+    ;
+}
+
+/* |||||||||||||||            РАЗДЕЛ ДЛЯ ОПИСАНИЯ КУРСОВ           |||||||||||||||||||||*/
+.more-py {
+    /* border: dashed #000; */
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    margin-top: 20rem;
+    overflow: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.more-py .content {
+    display: flex;
+    flex-direction: column;
+    scroll-margin-top: 2rem;
+}
+
+.more-py .content h1 {
+    text-align: center;
+}
+
+.text-with-image {
+    display: flex;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    scroll-snap-align: start;
+    /* выравниваем контейнеры по верхнему краю экрана */
+}
+
+.base-text p {
+    margin-top: 2rem;
+    font-family: 'Ubuntu';
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.text {
+    flex: 1;
+}
+
+.py-image {
+    display: flex;
+    /* border: dashed #333; */
+    margin-left: 5rem;
+    margin-right: 0;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.py-image img {
+    max-width: 80%;
+    height: auto;
+    object-fit: cover;
+    width: 40rem;
+    border-radius: 20px;
+    box-shadow: 0px -10px 5px #3b3b3b;
+}
+
+/*|||||||||||||     ИСКЛЮЧЕНИЯ ДЛЯ ВТОРОГО СЛАЙДА           ||||||||||*/
+#second-slide {
+    flex-direction: row-reverse;
+}
+
+#py-image-2 {
+    display: flex;
+    /* border: dashed #333; */
+    margin-right: 5rem;
+    margin-left: 0;
+    justify-content: flex-start;
+}
+
+#py-image-2 img {
+
+}
+    /* ||||||||||||     ИСКЛЮЧЕНИЯ ДЛЯ ТРЕТЬЕГО СЛАЙДА         |||||||||||| */
+#py-image-3 {
+    width: 50rem;
 }
