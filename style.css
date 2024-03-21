@@ -257,9 +257,9 @@ a {
     max-width: 80%;
     height: auto;
     object-fit: cover;
-    width: 40rem;
+    width: 45rem;
     border-radius: 20px;
-    box-shadow: -1px -5px 5px #3b3b3b;
+    box-shadow: -1px -5px 5px #3b3b3b25;
 }
 
 /*|||||||||||||     ИСКЛЮЧЕНИЯ ДЛЯ ВТОРОГО СЛАЙДА           ||||||||||*/
@@ -275,7 +275,7 @@ a {
     justify-content: flex-start;
 }
 
-    /* ||||||||||||     ИСКЛЮЧЕНИЯ ДЛЯ ТРЕТЬЕГО СЛАЙДА         |||||||||||| */
+/* ||||||||||||     ИСКЛЮЧЕНИЯ ДЛЯ ТРЕТЬЕГО СЛАЙДА         |||||||||||| */
 #py-image-3 {
     width: 50rem;
 }
