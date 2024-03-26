@@ -90,6 +90,7 @@ a {
     height: 3rem;
     width: 15rem;
     font-size: 1.17rem;
+    transition: background-color 0.5s ease;
 }
 
 #wrapBut:hover {
@@ -157,25 +158,6 @@ a {
 .sub-text li {
     padding-bottom: 1.7rem;
     max-height: 2rem;
-}
-
-.frame button {
-    font-family: "Ubuntu";
-    font-size: 1.3rem;
-    /* border: dashed; */
-    border: 0;
-    border-radius: 300px;
-    background-color: #3b3b3b;
-    color: #f5f5f5;
-    cursor: pointer;
-    text-wrap: nowrap;
-    height: 3rem;
-    width: 15rem;
-    font-size: 16px;
-}
-
-.frame button:hover {
-    background: #2c2c2c;
 }
 
 #python {
@@ -304,4 +286,59 @@ a {
     margin-right: 5rem;
     margin-left: 0;
     justify-content: flex-start;
+}
+
+/* МОДАЛЬНОЕ ОКНО */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50rem;
+    top: 25rem;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalBut {
+    font-family: "Ubuntu";
+    /* border: dashed; */
+    border: 0;
+    border-radius: 300px;
+    background-color: #000000;
+    color: #FAFAFA;
+    cursor: pointer;
+    text-wrap: nowrap;
+    height: 2.7rem;
+    width: 13rem;
+    font-size: 1.17rem;
+    transition: background-color 0.3s ease;
+}
+
+.modalBut:hover {
+    background-color: #3b3b3b;
 }
