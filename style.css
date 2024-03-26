@@ -269,7 +269,6 @@ a {
 
 #py-image-2 {
     display: flex;
-    /* border: dashed #333; */
     margin-right: 5rem;
     margin-left: 0;
     justify-content: flex-start;
