@@ -155,8 +155,12 @@ a {
     margin-left: -1rem;
 }
 
+.sub-text ul {
+    
+}
+
 .sub-text li {
-    padding-bottom: 1.7rem;
+    padding-bottom: 1.3rem;
     max-height: 2rem;
 }
 
@@ -337,8 +341,11 @@ a {
     width: 13rem;
     font-size: 1.17rem;
     transition: background-color 0.3s ease;
+    margin: 2rem 1rem 1rem 1.6rem;
+    list-style-type: none;
 }
 
 .modalBut:hover {
     background-color: #3b3b3b;
 }
+
