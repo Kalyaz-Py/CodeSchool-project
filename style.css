@@ -313,13 +313,15 @@ a {
     width: 40rem;
     height: 30rem;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
 .close:hover,
@@ -347,4 +349,29 @@ a {
 
 .modalBut:hover {
     background-color: #3b3b3b;
+}
+
+.form-modal {
+    display: flex;
+    justify-content: center;
+}
+
+.input-for-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+.input-for-form input {
+    font-family: "Ubuntu";
+    font-size: 1.1rem;
+}
+
+.text-for-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    font-size: 1.2rem;
 }
