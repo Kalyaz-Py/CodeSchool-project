@@ -1,6 +1,7 @@
 const modal = document.getElementById('modal');
 const closeButton = document.querySelector('.close');
 
+const modal1 = document.getElementById('')
 // Открыть модальное окно
 function openModal() {
   modal.style.display = 'flex'; // Было 'block'
@@ -25,6 +26,8 @@ window.addEventListener('click', (event) => {
 window.addEventListener('resize', () => {
   modal.style.display = window.innerWidth > 768 ? 'flex' : 'block';
 });
+
+
 
 
 
