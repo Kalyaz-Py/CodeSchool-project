@@ -10,6 +10,9 @@
 </head>
 
 <body>
+
+
+
     <div class="container">
         <div class="greetings">
             <div class="greetings-text">
@@ -69,7 +72,7 @@
         <div class="frame" id="fullstack">
             <div class="main-text">
                 <a href="">
-                    <h1>FullStack -<br>
+                    <h1>Fullstack -<br>
                         разработчик</h1>
                 </a>
             </div>
@@ -228,36 +231,110 @@
                     <img src="images/front-3.png" alt="Фото-3">
                 </div>
             </div>
-
-            <!-- МОДАЛЬНОЕ ОКНО -->
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>Покупка курса</h2>
-                    <h3 align="center"><b>Для связи</b></h3>
-
-
-                    <div class="wrapper-form">
-                        <div class="form-modal">
-                            <div class="text-for-form">
-                                <p> <b>Имя</b> </p>
-                                <p> <b>Фамилия</b> </p>
-                            </div>
-                        <div class="input-for-form">
-                            <input type="text" name="name" size="25px" required> <br> <br>
-                            <input type="text" name="email" size="25px" required>
-                        </div>
-                        </div>
-                    <button class="button-send-form" onclick="openWrapModal()">Отправить</button>
+        </div>
+    </div>
+    <!-- |||||||||||||||||| fullstack  ||||||||||||||||||| -->
+    <div class="full-case" id="full-but">
+        <div class="content">
+            <h1>Fullstack - разработчик</h1>
+            <div class="text-with-image" id="first-slide-full">
+                <div class="text">
+                    <h2>Улучшение Front и Back навыков</h2>
+                    <div class="base-text">
+                        <p>Хотите стать лучшим веб-разработчиком? Улучшите свои Front и Back навыки! Front-end
+                            разработчики отвечают за создание и поддержку пользовательского интерфейса сайтов, а
+                            back-end разработчики занимаются созданием и поддержкой серверной части веб-приложений.
+                            Уникальная комбинация этих навыков делает вас ценным профессионалом в сфере веб-разработки.
+                            Научитесь создавать красивые и удобные интерфейсы при помощи современных фреймворков и
+                            библиотек, а также узнайте, как эффективно работать с базами данных и серверами для создания
+                            надежных и масштабируемых веб-приложений.</p>
                     </div>
                 </div>
+                <div class="image-for-case">
+                    <img src="images/full-1.png" alt="Фото-1">
+                </div>
             </div>
-
-            <div id="modal1" class="modal1">
-                
+            <div class="text-with-image" id="second-slide-full">
+                <div class="text">
+                    <h2>Обучение работы с Docker</h2>
+                    <div class="base-text">
+                        <p>Docker - это платформа для разработки, доставки и запуска приложений в контейнерах. Она
+                            позволяет упаковывать весь необходимый софт, включая код, библиотеки и зависимости, в единый
+                            компактный контейнер, который может быть запущен на любом сервере с установленным Docker.
+                            Обучение работы с Docker позволит вам создавать легковесные и повторяемые окружения для
+                            разработки и развертывания ваших приложений, упрощая процесс разработки и обеспечивая их
+                            независимость от конкретного хост-системы. Изучите основы Docker, настройку контейнеров,
+                            управление сетями и образами, а также инструменты для оркестрации и управления контейнерами.
+                        </p>
+                    </div>
+                </div>
+                <div class="image-for-case" id="full-image-2">
+                    <img src="images/full-2.png" alt="Фото-2">
+                </div>
+            </div>
+            <div class="text-with-image" id="third-slide-full">
+                <div class="text">
+                    <h2>Различные фреймворки</h2>
+                    <div class="base-text">
+                        <p>Фреймворки играют важную роль в веб-разработке, обеспечивая структурированный и эффективный
+                            подход к созданию веб-приложений. Знание различных фреймворков дает вам возможность выбирать
+                            наиболее подходящий вариант для каждой конкретной задачи. Изучайте популярные фреймворки,
+                            такие как React, Angular или Vue.js для фронтенда, а также Django, Ruby on Rails или Laravel
+                            для бэкенда. Узнайте, как взаимодействовать с API, создавать маршрутизацию, работать с
+                            базами данных и проектировать архитектуру ваших приложений при помощи этих фреймворков.
+                            Комбинируйте несколько фреймворков и создавайте уникальные решения для различных проектов.
+                        </p>
+                    </div>
+                </div>
+                <div class="image-for-case">
+                    <img src="images/full-3.png" alt="Фото-3">
+                </div>
             </div>
         </div>
     </div>
+
+
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Покупка курса</h2>
+            <h3 align="center"><b>Для связи</b></h3>
+
+
+            <div class="wrapper-form">
+                <div class="form-modal">
+                    <div class="text-for-form">
+                        <p> <b>Имя</b> </p>
+                        <p> <b>Номер телефона</b> </p>
+                    </div>
+                    <div class="input-for-form">
+                        <input type="text" id="form-input1" placeholder="Введите..." size="25px" required> <br> <br>
+                        <input type="text" id="form-input2" placeholder="Введите..." size="25px" required>
+                    </div>
+                </div>
+                <button id="button-send-form">Подать заявку</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- /////////////////////////////////////////// -->
+
+
+    <br><br><br><br><br><br><br><br>
+    <footer>
+        <h2>Контактная информация</h2>
+        <div class="foot-text">
+            <div class="contact-info">
+                <p>xakimov.rufat.07@gmail.com <br> +7 (912) 510-76-54</p>
+            </div>
+            <div class="copyright">
+                © 2024 Индивидуальный проект. Все права защищены
+            </div>
+        </div>
+
+    </footer>
 </body>
 <script src="script.js"></script>
 
