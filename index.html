@@ -18,7 +18,9 @@
                             <a href="#our-sections">Курсы</a>
                         </h3>
                     </div>
-                    <div class="bot-text"><h3><a href="#foot">Контакты</a></h3></div>
+                    <div class="bot-text">
+                        <h3><a href="#foot">Контакты</a></h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,9 +49,7 @@
         <div class="list-section">
             <div class="frame" id="python">
                 <div class="main-text">
-                    <a href="#py-but">
-                        <h1>Python -<br />разработчик</h1>
-                    </a>
+                    <h1>Python -<br />разработчик</h1>
                 </div>
                 <div class="sub-text">
                     <ul>
@@ -61,18 +61,19 @@
                         <button onclick="openModal()" class="modalBut">
                             Купить
                         </button>
+                        <a href="#py-but"
+                            ><button class="modalBut">Подробнее</button></a
+                        >
                     </ul>
                 </div>
             </div>
 
             <div class="frame" id="front">
                 <div class="main-text">
-                    <a href="#fr-but" id="">
-                        <h1>
-                            Frontend -<br />
-                            разработчик
-                        </h1>
-                    </a>
+                    <h1>
+                        Frontend -<br />
+                        разработчик
+                    </h1>
                 </div>
                 <div class="sub-text">
                     <ul>
@@ -82,18 +83,19 @@
                         <button onclick="openModal()" class="modalBut">
                             Купить
                         </button>
+                        <a href="#fr-but"
+                            ><button class="modalBut">Подробнее</button></a
+                        >
                     </ul>
                 </div>
             </div>
 
             <div class="frame" id="fullstack">
                 <div class="main-text">
-                    <a href="#full-but">
-                        <h1>
-                            Fullstack -<br />
-                            разработчик
-                        </h1>
-                    </a>
+                    <h1>
+                        Fullstack -<br />
+                        разработчик
+                    </h1>
                 </div>
                 <div class="sub-text">
                     <ul>
@@ -107,6 +109,9 @@
                         <button onclick="openModal()" class="modalBut">
                             Купить
                         </button>
+                        <a href="#FS-but"
+                            ><button class="modalBut">Подробнее</button></a
+                        >
                     </ul>
                 </div>
             </div>
@@ -370,6 +375,7 @@
                         <div class="text-for-form">
                             <p><b>Имя</b></p>
                             <p><b>Номер телефона</b></p>
+                            <p><b>Почта</b></p>
                         </div>
                         <div class="input-for-form">
                             <input
@@ -383,7 +389,16 @@
                             <br />
                             <input
                                 type="text"
-                                id="form-input2"
+                                id="phone-input"
+                                placeholder="Введите..."
+                                size="25px"
+                                required
+                            />
+                            <br />
+                            <br />
+                            <input
+                                type="text"
+                                id="form-input3"
                                 placeholder="Введите..."
                                 size="25px"
                                 required
