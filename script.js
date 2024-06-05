@@ -10,8 +10,10 @@ const inputForm3 = document.getElementById("form-input3");
 
 // Открыть модальное окно
 function openModal() {
+  modal.classList.remove('close')
   modal.style.display = "flex"; // Было 'block'
   modal.classList.add("modal");
+  
 }
 // Очистка формы
 function clearForm() {
@@ -22,7 +24,8 @@ function clearForm() {
 
 // Закрыть модальное окно
 function closeModal() {
-  modal.style.display = "none";
+  // modal.style.display = "none";
+  modal.classList.add('close')
   clearForm();
 }
 // Закрытие модального окна при клике на кнопку покупки
