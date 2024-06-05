@@ -20,10 +20,11 @@ body {
 
 a {
     text-decoration: none;
+    color: rgb(0, 0, 0)
 }
 
 a::after {
-    color: #fff;
+    color: rgb(0, 0, 0)
 }
 
 .container {
@@ -590,7 +591,7 @@ a::after {
 footer {
     display: flex;
     flex-direction: column;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgb(156, 156, 156);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -606,6 +607,10 @@ footer {
     z-index: -9;
     font-size: 1.05rem;
     color: #000;
+}
+
+.contact-info a img{
+    width: 50px;
 }
 
 /* ||||||||||       ПАНЕЛЬ НАВИГАЦИИ     |||||||||||||| */
