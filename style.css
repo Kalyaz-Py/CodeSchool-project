@@ -291,6 +291,7 @@ a::after {
     box-shadow: 10px 10px rgba(0, 0, 0, .25);
     background-color: #fcdc5d;
     color: #000;
+    cursor: pointer;
 }
 .case .textForEvent{
     font-size: 1.2rem;
@@ -681,7 +682,7 @@ footer {
     padding-left: 2rem;
 
     height: 100vh;
-    width: 7rem;
+    width: 10rem;
 
     
 }
